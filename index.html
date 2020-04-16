@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- created by - jahid momin -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reciept Generater</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<section>
+<span id="date" style="background-color: red"></span>
+			<table>
+				<tr><td><h1>Qadri Shop </h1>
+					<input type="number" id="rate" placeholder="Rate" required><td></tr>
+				<tr>
+				 	<td><label>Customer Name</label></td>
+					<td><input type="text" id="cust_name" required placeholder="Enter Customer Name " /></td>
+				</tr>
+				<tr>
+					<td><label>Address</label></td>
+					<td><textarea placeholder="Enter Customer Address" id="Address"></textarea></td>
+				</tr>
+				<tr>
+					<td>
+						<select id="item" required>
+							<option value="chicken">Chicken</option>
+							<option value="mutton">Mutton</option>
+						</select>
+					</td>
+				<td><input type="number" id="weight" placeholder="Killograms" required></td>
+				</tr>
+				<tr>
+					<td><label>Mobile No:</label></td>
+				<td><input type="number" id="mobile_no" placeholder="Mobile No" required></td>
+				</tr>
+				<tr>
+				<td><input type="button" id="Generate" onclick="fetchData()" value="Generate"></td>
+					<td colspan="2" >
+						<input type="button" id="reset" value="Reset" onclick="reset()">
+						<input type="button" name="Print" value="Print" onclick="print()">
+					</td>	
+				</tr>
+				<tr><td><footer>copyright &copy jahidmomin ,2020</footer></td></tr>
+			</table>
+			<article id="show">
+			</article>
+
+		</section>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
